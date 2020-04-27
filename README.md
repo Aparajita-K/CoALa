@@ -87,3 +87,13 @@ LogData[[3]]=log(LogData[[3]],base=10)
 source("ConvexLaplacian.R")
 ConvexLaplacian(Data=LogData,K=K)
 ```
+
+##### Contact Information
+
+Aparajita Khan   
+Senior Research Fellow   
+Machine Intelligence Unit    
+Indian Statistical Institute    
+203, B. T. Road    
+Kolkata- 700108    
+E-mail: aparajitak_r@isical.ac.in,  aparajitakhan1107@gmail.com
