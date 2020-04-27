@@ -8,7 +8,7 @@ doi: 10.1109/TPAMI.2019.2945574
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8859233&isnumber=4359286
 
 
-Inorder to execute the R code for the Lower Grade Glioma (LGG) data set (a type of brain cancer),  within the R environment execute:
+Inorder to execute the R code on the lower grade glioma (LGG) data set (a type of brain cancer),  within the R environment execute:
 >source("LGGdemo.R")
 
 
@@ -40,7 +40,7 @@ The matrices in the list can have variable number of columns(features), but all 
 
 ``rank``: The rank of the individual and joint Laplacian. 
 Default value: NULL.
-if ``rank=NULL``, the algorithm varies the rank between ceiling(K/M) to 50 and selects the optimal rank of the joint subspace.
+if ``rank=NULL``, the algorithm varies the rank between ``ceiling(K/M)`` to 50 and selects the optimal rank of the joint subspace.
 ``M`` is the number of modalities in the data set.
 
 ``alpha``: Weight of the convex combination in joint Laplacian.
@@ -68,6 +68,7 @@ if ``mod=NULL``, the algorithm names the modalities as ``1,2,...M``.
 # Example call:
 
 ```r
+#CoALa on lower grade glioma (LGG) data set
 Data<-list()
 Data[[1]] <- as.matrix(read.table(paste0("DataSets/BRCA/mDNA",n),sep=" ",header=TRUE,row.names=1))
 Data[[2]] <- as.matrix(read.table(paste0("DataSets/BRCA/RNA",n),sep=" ",header=TRUE,row.names=1))
