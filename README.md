@@ -14,7 +14,6 @@ Inorder to execute the R code for the Lower Grade Glioma (LGG) data set (a type 
 
 
 Joint subspace or Eigenvectors of the Joint Laplacian  is written to file : `LrStar_Eigenvectors.txt`
-
 LrStar_Eigenvectors.txt contains a *(n x r)* matrix.
 Here *n* is the number of samples in the data set and *r* is the optimal/required rank of the joint subspace.
 
@@ -35,7 +34,7 @@ Arguments
 
 *Data*:  A list object containing *M* data matrices representing *M* different omic data types measured in a set of *n* samples. 
 For each matrix, the rows represent samples, and the columns represent genomic features.
-The matrices in the list can have variable numbe of columns(features), but all must have the same number of *n* rows(samples).
+The matrices in the list can have variable number of columns(features), but all must have the same number of *n* rows(samples).
 
 *K*: The number of clusters in the data set.
 
