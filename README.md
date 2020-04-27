@@ -8,21 +8,21 @@ doi: 10.1109/TPAMI.2019.2945574
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8859233&isnumber=4359286
 
 
-Inorder to execute the R code for the **Lower Grade Glioma (LGG) data set** 
-(a type of brain cancer),  within the R environment execute:
+Inorder to execute the R code for the Lower Grade Glioma (LGG) data set (a type of brain cancer),  within the R environment execute:
 >source("LGGdemo.R")
 
 
 
-Joint subspace or Eigenvectors of the Joint Laplacian  is written to file : *LrStar_Eigenvectors.txt*
+Joint subspace or Eigenvectors of the Joint Laplacian  is written to file : `LrStar_Eigenvectors.txt`
+
 LrStar_Eigenvectors.txt contains a *(n x r)* matrix.
 Here *n* is the number of samples in the data set and *r* is the optimal/required rank of the joint subspace.
 
-The eigenvalues of the Joint Laplacian is written to file : *LrStar_Eigenvalues.txt*
+The eigenvalues of the Joint Laplacian is written to file : `LrStar_Eigenvalues.txt`
 
 *k*-means clustering can be performed on the rows of LrStar_Eigenvectors matrix to get the clusters in the data set. The cluster assignments are written to the file* LGG-ClusterAssignment.txt* for the LGG data set	.
 
-The file *ConvexLaplacian.R* contains the R implementation of the CoALa algorithm as a function `ConvexLaplacian`. 
+The file `ConvexLaplacian.R` contains the R implementation of the CoALa algorithm as a function `ConvexLaplacian`. 
 Details of the fuctions is as follows:
 
 Function Name: `ConvexLaplacian`
