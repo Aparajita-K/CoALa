@@ -8,7 +8,8 @@ doi: 10.1109/TPAMI.2019.2945574
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8859233&isnumber=4359286
 
 
-Inorder to execute the R code for the **Lower Grade Glioma (LGG) data set **(a type of brain cancer),  within the R environment execute:
+Inorder to execute the R code for the **Lower Grade Glioma (LGG) data set** 
+(a type of brain cancer),  within the R environment execute:
 >source("LGGdemo.R")
 
 
