@@ -19,7 +19,7 @@ Here *n* is the number of samples in the data set and *r* is the optimal/require
 
 The eigenvalues of the Joint Laplacian is written to file : `LrStar_Eigenvalues.txt`
 
-*k*-means clustering can be performed on the rows of LrStar_Eigenvectors matrix to get the clusters in the data set. The cluster assignments are written to the file* LGG-ClusterAssignment.txt* for the LGG data set	.
+*k*-means clustering can be performed on the rows of LrStar_Eigenvectors matrix to get the clusters in the data set. The cluster assignments are written to the file `LGG-ClusterAssignment.txt` for the LGG data set	.
 
 The file `ConvexLaplacian.R` contains the R implementation of the CoALa algorithm as a function `ConvexLaplacian`. 
 Details of the fuctions is as follows:
