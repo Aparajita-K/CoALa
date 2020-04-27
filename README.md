@@ -32,35 +32,35 @@ Function Name: `ConvexLaplacian`
 
 Arguments
 
-*Data*:  A list object containing *M* data matrices representing *M* different omic data types measured in a set of *n* samples. 
+`Data`:  A list object containing *M* data matrices representing *M* different omic data types measured in a set of *n* samples. 
 For each matrix, the rows represent samples, and the columns represent genomic features.
 The matrices in the list can have variable number of columns(features), but all must have the same number of *n* rows(samples).
 
-*K*: The number of clusters in the data set.
+`K`: The number of clusters in the data set.
 
-*rank*: The rank of the individual and joint Laplacian. 
+``rank``: The rank of the individual and joint Laplacian. 
 Default value: NULL.
-if *rank=NULL*, the algorithm varies the rank between ceiling(K/M) to 50 and selects the optimal rank of the joint subspace.
-M is the number of modalities in the data set.
+if ``rank=NULL``, the algorithm varies the rank between ceiling(K/M) to 50 and selects the optimal rank of the joint subspace.
+``M`` is the number of modalities in the data set.
 
-*alpha*: Weight of the convex combination in joint Laplacian.
+``alpha``: Weight of the convex combination in joint Laplacian.
 Default value: NULL.
-if *alpha=NULL*, the algorithm computes alpha as proposed in the paper.
+if ``alpha=NULL``, the algorithm computes alpha as proposed in the paper.
 
-*beta*: Value of Damping factor during weight selection.
+``beta``: Value of Damping factor during weight selection.
 Default value: NULL.
-if *beta=NULL*, value of beta is set to *1.25* as in paper.
+if ``beta=NULL``, value of beta is set to ``1.25`` as in paper.
 
-*simFromFile*: Boolean value (TRUE/FALSE)
-if FALSE, algorithm considers the matrices in the 'Data' list as feature-based representation, i.e., as *(n x d_m)* data matrices,
+``simFromFile``: Boolean value (``TRUE``/``FALSE``)
+if ``FALSE``, algorithm considers the matrices in the 'Data' list as feature-based representation, i.e., as *(n x d_m)* data matrices,
 and computes the graph Laplacian from data matrices.
-if TRUE, algorithm considers the matrices in the 'Data' list as graph-based representation, i.e., as *(n x n)* similarity matrices,
+if ``TRUE``, algorithm considers the matrices in the 'Data' list as graph-based representation, i.e., as ``(n x n)`` similarity matrices,
 and computes the graph Laplacian from similarity matrices.
-Default value: FALSE.
+Default value: ``FALSE``.
 
-*mod*: Array containing names of modalities
+``mod``: Array containing names of modalities
 Default value: NULL.
-if mod=NULL, the algorithm names the modalities as* 1,2,...M*.
+if ``mod=NULL``, the algorithm names the modalities as ``1,2,...M``.
 
 
 
