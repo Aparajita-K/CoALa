@@ -1,5 +1,5 @@
 # Article:
-A. Khan and P. Maji, "Approximate Graph Laplacians for Multimodal Data Clustering," in *IEEE Transactions on Pattern Analysis and Machine Intelligence.*
+A. Khan and P. Maji, "Approximate Graph Laplacians for Multimodal Data Clustering," in *IEEE Transactions on Pattern Analysis and Machine Intelligence*, pp. 1--16, 2019.
 doi: 10.1109/TPAMI.2019.2945574
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8859233&isnumber=4359286
 
